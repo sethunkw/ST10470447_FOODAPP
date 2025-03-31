@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food_pic"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="149dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:text="Daily Meals"
+        android:textColor="#0D0C0C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="48dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="222dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="83dp"
+        android:background="@color/white"
+        android:text="Meal Suggestion"
+        android:textColor="#0B0808"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_height="71dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="353dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="enter time of the day"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_width="wrap_content" />
+
+    <Button
+        android:id="@+id/butt"
+        android:layout_width="151dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="245dp"
+        android:text="submit"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="113dp"
+        android:background="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
